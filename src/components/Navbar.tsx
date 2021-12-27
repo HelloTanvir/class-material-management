@@ -37,6 +37,7 @@ const Navbar = () => {
             <span className="text-3xl text-green-300">WPE-45</span>
             <div className="flex space-x-5">
                 {Object.keys(subjectAndInstructor).map(
+                    // @ts-ignore
                     (subjectName: 'TP' | 'CTCA' | 'WPP' | 'FM' | 'AM-1' | 'FEEE', index) => (
                         <div
                             key={subjectName}
