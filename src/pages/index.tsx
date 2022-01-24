@@ -9,9 +9,15 @@ const Home: NextPage = () => (
             <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <main className="px-10 py-5 text-center text-white rounded-lg bg-dark-500">
-            Please select a teacher to get all of his/her class recordings, lecture slides and class
-            notes
+        {/* <main className="px-10 py-5 text-center text-white rounded-lg bg-dark-500"> */}
+        <main
+            style={{ height: 'calc(100vh - 57px)' }}
+            className="flex items-center justify-center bg-gray-50"
+        >
+            <div className="px-5 py-6 text-xl tracking-wide bg-white shadow-md text-dark-500 rounded-xl">
+                Please select a teacher to get all of his/her class recordings, lecture slides and
+                class notes
+            </div>
         </main>
     </div>
 );
