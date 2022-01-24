@@ -15,7 +15,9 @@ const Header = () => {
             {/* logo and menu bar (on small device) */}
             <div className="flex items-center justify-between flex-1 md:flex-none">
                 <Link href="/">
-                    <span className="text-2xl text-green-300">WPE-45</span>
+                    <span className="text-2xl font-bold tracking-wider text-transparent cursor-pointer bg-clip-text bg-gradient-to-br from-red-400 to-red-600">
+                        WPE-45
+                    </span>
                 </Link>
 
                 {/* hamburger */}
