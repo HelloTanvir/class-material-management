@@ -4,14 +4,32 @@ import { createSlice } from '@reduxjs/toolkit';
 const subjectSlice = createSlice({
     name: 'subject',
 
-    initialState: {
-        TP: ['Jalal Sir', 'Shuvo Sir'],
-        CTCA: ['Tomal Sir', 'Solaiman Sir'],
-        WPP: ["Jenny Ma'am", 'Emran Sir'],
-        FM: ['Sayekh Munir Sir', "Asma Ma'am"],
-        'AM-1': ["Farzana Ma'am", 'Sazid Sir'],
-        FEEE: ['Mofizul Sir', 'Asaduzzaman Sir'],
-    },
+    initialState: [
+        {
+            name: 'TP',
+            teachers: ['Jalal Sir', 'Shuvo Sir'],
+        },
+        {
+            name: 'CTCA',
+            teachers: ['Tomal Sir', 'Solaiman Sir'],
+        },
+        {
+            name: 'WPP',
+            teachers: ["Jenny Ma'am", 'Emran Sir'],
+        },
+        {
+            name: 'FM',
+            teachers: ['Sayekh Munir Sir', "Asma Ma'am"],
+        },
+        {
+            name: 'AM-1',
+            teachers: ["Farzana Ma'am", 'Sazid Sir'],
+        },
+        {
+            name: 'FEEE',
+            teachers: ['Mofizul Sir', 'Asaduzzaman Sir'],
+        },
+    ],
 
     // reducers: {
     //     setOrgInfo: (
