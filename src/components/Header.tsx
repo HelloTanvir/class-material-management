@@ -52,7 +52,7 @@ const Header = () => {
             {/* buttons */}
             <div
                 className={`${
-                    open ? 'flex' : 'hidden md:flex'
+                    open ? 'flex flex-wrap' : 'hidden md:flex'
                 } justify-center gap-5 pb-4 mt-4 md:gap-3 md:mt-0 md:pb-0`}
             >
                 {subjects.map((subject) => (
