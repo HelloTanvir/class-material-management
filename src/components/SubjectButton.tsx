@@ -2,8 +2,7 @@ import { Menu, Transition } from '@headlessui/react';
 import { useRouter } from 'next/router';
 import { Fragment } from 'react';
 import { AiOutlineUser } from 'react-icons/ai';
-import { BsChevronDown } from 'react-icons/bs';
-import { FiEdit } from 'react-icons/fi';
+import { BsBook, BsChevronDown } from 'react-icons/bs';
 
 interface Props {
     name: string;
@@ -17,7 +16,7 @@ const SubjectBtn = ({ name, teachers }: Props) => {
         <Menu as="div" className="relative">
             <div>
                 <Menu.Button className="flex items-center gap-2 px-4 py-2 text-xs font-medium tracking-wider text-white transition-all duration-300 bg-gray-700 rounded-md hover:bg-opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
-                    <AiOutlineUser />
+                    <BsBook />
                     {name}
                     <BsChevronDown />
                 </Menu.Button>
@@ -51,7 +50,7 @@ const SubjectBtn = ({ name, teachers }: Props) => {
                                             );
                                         }}
                                     >
-                                        <FiEdit />
+                                        <AiOutlineUser />
                                         {teacher}
                                     </button>
                                 )}
