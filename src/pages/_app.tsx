@@ -1,10 +1,12 @@
 import type { AppProps } from 'next/app';
 import Router from 'next/router';
 import { useEffect, useState } from 'react';
+import { Provider } from 'react-redux';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Loader from '../components/Loader';
 import Navbar from '../components/Navbar';
+import store from '../store/store';
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -31,17 +33,21 @@ function MyApp({ Component, pageProps }: AppProps) {
     }, []);
 
     return (
-        <>
+        <Provider store={store}>
             <ToastContainer />
             {loading ? (
                 <Loader />
             ) : (
-                <div className="flex flex-col justify-center w-screen h-screen px-5 bg-dark-600 space-y-7 lg:px-44">
+                // <div className="flex flex-col justify-center w-screen h-screen px-5 bg-dark-600 space-y-7 lg:px-44">
+                //     <Navbar />
+                //     <Component {...pageProps} />
+                // </div>
+                <div>
                     <Navbar />
                     <Component {...pageProps} />
                 </div>
             )}
-        </>
+        </Provider>
     );
 }
 export default MyApp;
