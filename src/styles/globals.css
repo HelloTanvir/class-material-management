@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.pro-sidebar {
+  z-index: 1 !important;
+}
+
+.pro-sidebar > .pro-sidebar-inner {
+  background: #fff !important;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
   height: 16px;
