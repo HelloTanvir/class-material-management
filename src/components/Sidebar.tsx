@@ -21,7 +21,7 @@ const Sidebar = ({ open = false }: Props) => {
 
     return (
         <div style={{ height: 'calc(100vh - 57px)' }} className="border-r shadow w-max">
-            <ProSidebar width={200} collapsed={collapsed}>
+            <ProSidebar width={195} collapsed={collapsed}>
                 <SidebarHeader className="flex justify-end py-3 pr-5 bg-gray-200">
                     <BsArrowLeftRight
                         className="p-1 text-white bg-gray-700 rounded-full cursor-pointer hover:bg-gray-600"
