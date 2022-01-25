@@ -6,7 +6,7 @@ import Sidebar from '../../components/Sidebar';
 const Teacher: NextPage = () => {
     const router = useRouter();
 
-    const { teacherName, contentType }: { teacherName: string; contentType: string } = router.query;
+    const { teacherName, contentType } = router.query;
 
     // const mateirals: {
     //     [key: string]: { classRecordings: string[]; slides: string[]; classNotes: string[] };
@@ -84,7 +84,7 @@ const Teacher: NextPage = () => {
 
                 <div className="flex flex-col items-center flex-1 gap-5 py-5 overflow-y-auto">
                     <div className="px-5 py-6 text-xl tracking-wide bg-white shadow-md text-dark-500 rounded-xl">
-                        {teacherName.replace('-', ' ')} er kono {contentType} nai
+                        {teacherName?.toString().replace('-', ' ')} er kono {contentType} nai
                     </div>
                 </div>
             </main>

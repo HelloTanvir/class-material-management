@@ -15,7 +15,7 @@ interface Props {
 const Sidebar = ({ open = false }: Props) => {
     const router = useRouter();
 
-    const { teacherName }: { teacherName: string } = router.query;
+    const { teacherName } = router.query;
 
     const [collapsed, setCollapsed] = useState(!open);
 

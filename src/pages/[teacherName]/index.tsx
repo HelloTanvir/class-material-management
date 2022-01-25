@@ -5,7 +5,7 @@ import Sidebar from '../../components/Sidebar';
 
 const Teacher: NextPage = () => {
     const router = useRouter();
-    const { teacherName }: { teacherName: string } = router.query;
+    const { teacherName } = router.query;
 
     return (
         <div>
