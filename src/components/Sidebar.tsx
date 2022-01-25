@@ -2,7 +2,8 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { AiTwotoneProject } from 'react-icons/ai';
 import { BsArrowLeftRight } from 'react-icons/bs';
-import { VscOrganization } from 'react-icons/vsc';
+import { FiEdit } from 'react-icons/fi';
+import { VscRecord } from 'react-icons/vsc';
 import { Menu, MenuItem, ProSidebar, SidebarHeader } from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css';
 
@@ -22,11 +23,11 @@ const Sidebar = () => {
 
                 <Menu iconShape="circle">
                     <Link href="/recordings" passHref>
-                        <MenuItem icon={<VscOrganization />}>Recordings</MenuItem>
+                        <MenuItem icon={<VscRecord />}>Recordings</MenuItem>
                     </Link>
 
                     <Link href="/class-notes" passHref>
-                        <MenuItem icon={<AiTwotoneProject />}>Class Notes</MenuItem>
+                        <MenuItem icon={<FiEdit />}>Class Notes</MenuItem>
                     </Link>
 
                     <Link href="/lecture-slides" passHref>
