@@ -31,6 +31,8 @@ const subjectSlice = createSlice({
         },
     ],
 
+    reducers: {},
+
     // reducers: {
     //     setOrgInfo: (
     //         state,
