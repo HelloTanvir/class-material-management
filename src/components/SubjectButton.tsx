@@ -42,11 +42,8 @@ const SubjectBtn = ({ name, teachers }: Props) => {
                                             active ? 'bg-gray-300 text-white' : 'text-gray-900'
                                         } transition-all duration-300 flex rounded-md items-center gap-1 px-2 py-2 text-xs md:text-sm w-full`}
                                         onClick={() => {
-                                            // router.push('/');
                                             router.push(
-                                                `/teachers/${teacher
-                                                    .toLowerCase()
-                                                    .replace(' ', '-')}`
+                                                `/${teacher.toLowerCase().replace(' ', '-')}`
                                             );
                                         }}
                                     >
