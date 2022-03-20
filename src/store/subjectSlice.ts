@@ -6,27 +6,27 @@ const subjectSlice = createSlice({
 
     initialState: [
         {
-            name: 'TP',
+            name: 'YM-1',
             teachers: ['Jalal Sir', 'Shuvo Sir'],
         },
         {
-            name: 'CTCA',
+            name: 'FM-1',
             teachers: ['Tomal Sir', 'Solaiman Sir'],
         },
         {
-            name: 'WPP',
+            name: 'TTQC',
             teachers: ["Jenny Ma'am", 'Emran Sir'],
         },
         {
-            name: 'FM',
+            name: 'MMTF',
             teachers: ['Sayekh Munir Sir', "Asma Ma'am"],
         },
         {
-            name: 'AM-1',
+            name: 'FME',
             teachers: ["Farzana Ma'am", 'Sazid Sir'],
         },
         {
-            name: 'FEEE',
+            name: 'STAT',
             teachers: ['Mofizul Sir', 'Asaduzzaman Sir'],
         },
     ],
