@@ -21,7 +21,7 @@ const Sidebar = ({ open = false }: Props) => {
 
     return (
         <div style={{ height: 'calc(100vh - 57px)' }} className="border-r shadow w-max">
-            <ProSidebar width={195} collapsed={collapsed}>
+            <ProSidebar width={181} collapsed={collapsed}>
                 <SidebarHeader className="flex justify-end py-3 pr-5 bg-gray-200">
                     <BsArrowLeftRight
                         className="p-1 text-white bg-gray-700 rounded-full cursor-pointer hover:bg-gray-600"
@@ -32,15 +32,21 @@ const Sidebar = ({ open = false }: Props) => {
 
                 <Menu iconShape="circle">
                     <Link href={`/${teacherName}/recordings`} passHref>
-                        <MenuItem icon={<VscRecord />}>Recordings</MenuItem>
+                        <MenuItem className="tracking-tighter" icon={<VscRecord />}>
+                            Videos
+                        </MenuItem>
                     </Link>
 
                     <Link href={`/${teacherName}/class-notes`} passHref>
-                        <MenuItem icon={<FiEdit />}>Class Notes</MenuItem>
+                        <MenuItem className="tracking-tighter" icon={<FiEdit />}>
+                            Class Notes
+                        </MenuItem>
                     </Link>
 
                     <Link href={`/${teacherName}/lecture-slides`} passHref>
-                        <MenuItem icon={<AiTwotoneProject />}>Lecture Slides</MenuItem>
+                        <MenuItem className="tracking-tighter" icon={<AiTwotoneProject />}>
+                            Lecture Slides
+                        </MenuItem>
                     </Link>
                 </Menu>
             </ProSidebar>
