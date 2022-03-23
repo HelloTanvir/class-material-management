@@ -31,7 +31,7 @@ const Sidebar = ({ open = false }: Props) => {
                 </SidebarHeader>
 
                 <Menu iconShape="circle">
-                    <Link href={`/${teacherName}/recordings`} passHref>
+                    <Link href={`/${teacherName}/videos`} passHref>
                         <MenuItem className="tracking-tighter" icon={<VscRecord />}>
                             Videos
                         </MenuItem>
